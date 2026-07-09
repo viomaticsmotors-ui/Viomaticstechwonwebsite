@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Viomatics.Tec | Technical Service Provider</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#f5f7fb;
+}
+
+header{
+background:#0b1f3a;
+padding:18px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo{
+font-size:30px;
+font-weight:700;
+color:#fff;
+}
+
+.logo span{
+color:#00d4ff;
+}
+
+nav a{
+color:#fff;
+text-decoration:none;
+margin-left:25px;
+font-weight:500;
+}
+
+nav a:hover{
+color:#00d4ff;
+}
+
+.hero{
+padding:70px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:linear-gradient(135deg,#0b1f3a,#2563eb);
+color:#fff;
+flex-wrap:wrap;
+}
+
+.left{
+width:55%;
+}
+
+.left h1{
+font-size:50px;
+margin-bottom:20px;
+}
+
+.left p{
+font-size:18px;
+line-height:30px;
+margin-bottom:30px;
+}
+
+.btn{
+display:inline-block;
+padding:15px 35px;
+background:#00d4ff;
+color:#000;
+font-weight:600;
+text-decoration:none;
+border-radius:8px;
+}
+
+.btn:hover{
+background:#fff;
+}
+
+.booking{
+width:380px;
+background:#fff;
+padding:30px;
+border-radius:15px;
+box-shadow:0 15px 35px rgba(0,0,0,.2);
+color:#333;
+}
+
+.booking h2{
+text-align:center;
+margin-bottom:20px;
+color:#2563eb;
+}
+
+.booking input{
+width:100%;
+padding:13px;
+margin-bottom:15px;
+border:1px solid #ccc;
+border-radius:8px;
+font-size:15px;
+}
+
+.booking button{
+width:100%;
+padding:14px;
+border:none;
+background:#2563eb;
+color:#fff;
+font-size:17px;
+border-radius:8px;
+cursor:pointer;
+}
+
+.booking button:hover{
+background:#0b1f3a;
+}
+
+.services{
+padding:80px 8%;
+}
+
+.title{
+text-align:center;
+font-size:38px;
+margin-bottom:50px;
+color:#0b1f3a;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:#fff;
+padding:30px;
+border-radius:12px;
+text-align:center;
+box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.card h3{
+margin:15px 0;
+color:#2563eb;
+}
+
+footer{
+margin-top:70px;
+background:#0b1f3a;
+color:#fff;
+text-align:center;
+padding:25px;
+}
+
+@media(max-width:900px){
+
+.hero{
+flex-direction:column;
+}
+
+.left{
+width:100%;
+text-align:center;
+margin-bottom:40px;
+}
+
+.booking{
+width:100%;
+}
+
+.left h1{
+font-size:38px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+Viomatics<span>.Tec</span>
+</div>
+
+<nav>
+
+<a href="#">Home</a>
+<a href="#">Services</a>
+<a href="#">Portfolio</a>
+<a href="#">Contact</a>
+
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div class="left">
+
+<h1>Professional Technical Service Provider</h1>
+
+<p>
+
+We design professional websites, web applications,
+business portals, school management systems,
+e-commerce websites and complete IT solutions.
+
+</p>
+
+<a href="#" class="btn">Explore Services</a>
+
+</div>
+
+<div class="booking">
+
+<h2>Book Your Website</h2>
+
+<form id="bookingForm">
+
+<input
+type="text"
+placeholder="Full Name"
+required>
+
+<input
+type="text"
+placeholder="Website Title"
+required>
+
+<input
+type="tel"
+id="phone"
+placeholder="10 Digit Mobile Number"
+pattern="[6-9][0-9]{9}"
+maxlength="10"
+required>
+
+<input
+type="email"
+placeholder="Email Address"
+required>
+
+<button type="submit">
+Book Now
+</button>
+
+</form>
+
+</div>
+
+</section>
+
+<section class="services">
+
+<h2 class="title">Our Services</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>🌐 Website Design</h3>
+
+<p>Responsive business websites with modern UI.</p>
+
+</div>
+
+<div class="card">
+
+<h3>🛒 E-Commerce</h3>
+
+<p>Professional online shopping websites.</p>
+
+</div>
+
+<div class="card">
+
+<h3>🏫 School Management</h3>
+
+<p>Complete school ERP and management systems.</p>
+
+</div>
+
+<div class="card">
+
+<h3>💻 Software Development</h3>
+
+<p>Custom software for every business.</p>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<h3>Viomatics.Tec</h3>
+
+<p>Professional Technical Service Provider</p>
+
+<br>
+
+<p>© 2026 Viomatics.Tec | All Rights Reserved</p>
+
+</footer>
+
+<script>
+
+const form=document.getElementById("bookingForm");
+
+form.addEventListener("submit",function(e){
+
+const phone=document.getElementById("phone").value;
+
+const regex=/^[6-9]\d{9}$/;
+
+if(!regex.test(phone)){
+
+alert("Please enter a valid 10-digit mobile number.");
+
+e.preventDefault();
+
+return;
+
+}
+
+alert("Booking submitted successfully!");
+
+});
+
+</script>
+
+</body>
+</html>
